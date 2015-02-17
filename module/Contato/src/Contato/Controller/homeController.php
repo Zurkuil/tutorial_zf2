@@ -11,9 +11,18 @@ class HomeController extends AbstractActionController
 {
     /**
      * action index
-     * @return ZendViewModelViewModel
+     * @return \Zend\View\Model\ViewModel
      */
     public function indexAction()
+    {
+        return new ViewModel();
+    }
+    
+    /**
+     * action sobre
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function sobreAction()
     {
         return new ViewModel();
     }
